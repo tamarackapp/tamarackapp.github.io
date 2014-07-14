@@ -1,3 +1,5 @@
+---
+---
 .headerlink {
     display: none;
 }
@@ -72,10 +74,10 @@ h1 {
 .main-callout .centered-image {
     margin-top: 30px;
     height: 247px;
-    background: url(../images/index-screenshot.png) center bottom no-repeat;
+    background: url(../images/index-screenshot.png?v={{ site.time | date_to_xmlschema | cgi_escape }}) center bottom no-repeat;
     background-image: -webkit-image-set(
-        url(../images/index-screenshot.png) 1x,
-        url(../images/index-screenshot@2x.png) 2x);
+        url(../images/index-screenshot.png?v={{ site.time | date_to_xmlschema | cgi_escape }}) 1x,
+        url(../images/index-screenshot@2x.png?v={{ site.time | date_to_xmlschema | cgi_escape }}) 2x);
 }
 
 .main-callout .container, .navbar-default .container {
