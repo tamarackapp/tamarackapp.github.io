@@ -8,6 +8,10 @@
     font-family: Lato, sans-serif;
     font-weight: 300;
     margin: 0;
+    border-radius: 0;
+}
+
+.navbar .container {
     padding-top: 20px;
     padding-bottom: 60px;
 }
@@ -15,24 +19,36 @@
 .navbar .navbar-brand {
     text-transform: uppercase;
     font-size: 37px;
-    color: #000;
+    color: #53585f;
 }
 
 .navbar .navbar-nav li a {
     font-size: 26px;
-    color: #000;
+    color: #53585f;
 }
 
 h1 {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 34px;
     line-height: 1.4;
 }
 
 .main-callout {
     padding-bottom: 1px;
     background-color: #dddee0;
+}
+
+.main-callout .right {
+    padding-left: 35px;
+}
+
+.main-callout .left {
+    padding-right: 35px;
+}
+
+.main-callout h1 {
+    text-align: right;
 }
 
 .main-callout .sign-up {
@@ -43,7 +59,7 @@ h1 {
     display: inline-block;
     padding: 8px 16px;
     font-size: 28px;
-    margin: 50px 0;
+    margin: 45px 0 10px 0;
     border-radius: 5px;
 }
 
@@ -53,6 +69,15 @@ h1 {
     font-size: 20px;
 }
 
-.main-callout img {
+.main-callout .centered-image {
     margin-top: 30px;
+    height: 247px;
+    background: url(../images/index-screenshot.png) center bottom no-repeat;
+    background-image: -webkit-image-set(
+        url(../images/index-screenshot.png) 1x,
+        url(../images/index-screenshot@2x.png) 2x);
+}
+
+.main-callout .container, .navbar-default .container {
+    background-image: -webkit-linear-gradient(00deg, #dddee0, #ebedf3, #dddee0);
 }
